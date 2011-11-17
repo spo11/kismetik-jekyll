@@ -1,0 +1,37 @@
+---
+layout: post
+title: My Linux Desktop
+description: freedom 
+created: !!timestamp '2011-04-18 10:00:00'
+tags:
+    - linux
+    - desktop
+---
+
+I am thoroughly obsessed with desktop customization. So obsessed am I, in fact, that I decided to install Arch Linux as my only operating system. It truly is a computer control freak's operating system as the base install consists of a console window and a package manager (called *pacman*). Unlike some other distributions, Arch does not come pre-loaded with any desktop environment or window manager. You choose and installthese yourself. 
+
+<!--more-->
+
+### Differences between a window manager and a desktop environment
+
+A *window manager* (WM) is just that: a program that manages your windows. There are two types of window managers: tiling ones, and floating ones. In a tiling one, you do not usually have the traditional titlebar, and can arrange the windows side by side without resizing it yourself.
+
+<div class="picture left"> <img src="/images/gnome-2-32.png" width="250" alt="Not this one" />GNOME desktop</div>
+
+A *desktop environment* (DE) is a set of applications and GUI tools. GNOME is an example of this in that it comes with a set of applications the developers decided were necessary. 
+
+### Going DE-less
+
+When I used Ubuntu, I never really used a lot of the applications that came with the GNOME desktop. So switching to Arch Linux gave me the freedom to go DE-less without messing up the system as I did when I attempted to go DE-less with a standard Ubuntu install (though it is possible to do that with ubuntu-minimal). 
+
+<div class="picture right"><a href="/images/0408code.png" rel="lightbox"><img src="/images/0408code.png" width="250" alt="Not this one" /></a>My subtle desktop</div>
+
+Going DE-less meant having to set up a lot of things myself, which was fine with me. 
+
+For a WM, I went with a standalone, tiling WM called [*subtle*](http://subtle.subforge.org). Subtle is configurable through a ruby file that sits in your <code>$XDG_CONFIG_HOME</code>. 
+
+I then installed some [lightweight applications](https://wiki.archlinux.org/index.php/Lightweight_Applications), many of which were command-line based or very light on system resources. 
+
+### Bottom line?
+
+Minimalism is awesome. 

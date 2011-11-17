@@ -1,0 +1,23 @@
+---
+layout: main
+title: page
+---
+<!-- Top -->
+{% include nav.html %}
+
+<!-- Head -->
+{% include head.html %}
+
+<div id="content">
+
+  <div class="date">
+    <ul>
+      <li class="day">{{ page.date | date:"%d" }}</li>
+      <li class="month">{{ page.date | date:"%b" }}</li>
+    </ul>
+  </div>
+<div class="entry">
+ {{ content }} 
+</div>
+
+</div>

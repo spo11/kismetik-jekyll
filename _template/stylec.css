@@ -1,0 +1,308 @@
+/* Project Minimal
+ * by Kismetik
+ * I like ponies.
+ */
+
+body {
+    margin: 0 auto;
+    font-family: 'Georgia', Sans-Serif;
+}
+
+/* Navigation */
+
+#nav { 
+    border-top: #eee solid 5px;
+    width: 100%;
+    padding-left: 50px;
+    font-family: 'Arial', Sans;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+#nav ul { 
+    margin: 0 5px;
+    padding: 0;
+    list-style-type: none;
+}
+#nav li {
+    float: left;
+    display: inline;
+    margin: 0 0 0 5px;
+    padding: 0;
+}
+#nav a:link,
+#nav a:visited {
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 5px 10px;
+    color: #d0d0d0;
+}
+
+#nav a:hover {
+    float: left;
+    display: block;
+    padding: 5px 10px;
+    background: #ddd;
+    color: #f5f5f5;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-bottomright: 3px;
+}
+
+#nav ul li.active a:link,
+#nav ul li.active a:visited,
+#nav ul li.active a:hover,
+#nav ul li.active a:active {
+    color: #fff;
+    text-decoration: none;
+    background: #eee;
+}
+
+#nav ul li span.active {
+    color: #fff;
+    text-decoration: none;
+    background: #eee;
+    display: block;
+    padding: 5px 10px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius:3px;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-bottomright: 3px;
+}
+/* Splash Head */
+
+#splash {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    border-bottom: solid 1px #eee;         
+}
+h1.logo {
+    color:#86A4D1; 
+    margin:0; 
+    padding: 30px 50px 0px 50px;
+    font-size: 100pt; 
+    text-transform: lowercase; 
+    font-style: italic;
+}
+#splash p {
+    width: 50%;
+    line-height: 2em;
+    margin: 0 auto;
+    padding: 30px 50px;
+    font-size:18pt;
+    color: #8d8d8d;
+}
+
+/* Other Pages */
+
+/* TOP */
+#top {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    margin: 50px auto 0 auto;
+    padding: 0;
+    border-bottom: solid 1px #eee;         
+}
+h1.title {
+    color:#86A4D1; 
+    display: inline;
+    margin:0; 
+    padding: 30px 20px 0px 50px;
+    font-size: 30pt; 
+    text-transform: lowercase; 
+    font-style: italic;
+}
+#top span {display: inline; color: #8C8C8C; font-size: 20pt;}
+
+/* CONTENT AREA */
+#content {
+    clear: both;
+    width: 1000px;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+/* Journal Page > Date */
+.date {
+    color: #9A9A9A;
+    padding: 0px 30px 0px 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: right;
+    width: 25px;
+    font-family: 'Arial', Sans-Serif;
+    float: left;
+}
+.date ul {list-style-type: none; text-indent: -1em;}
+.date li.day {font-size: 28pt;}
+.date li.month {font-size: 12pt; text-transform: uppercase;}
+.date li.year {font-size: 9pt;}
+
+/* Journal :: Frontpage > Featured */
+#featured {clear: both;}
+.entry {
+    padding: 0px 30px 30px 10px;
+    margin-left: 20px;
+    width: 700px;
+    float: left;
+}
+.entry h1, h2, h3 {text-transform: uppercase;font-family: 'Arial', Sans-Serif;}
+.entry h1 {color: #3e3e3e; font-size: 36pt; text-transform: uppercase; letter-spacing: 2pt;}
+.entry h2 {font-size: 24pt; color: #6A8EA1;}
+.entry h3 {font-size: 18pt; color: #70828B;}
+.entry a:link, .entry a:visited {text-decoration: none; color: #E55353;}
+.entry a:hover {background: #FFF3B7; border-bottom: 1px solid #EEE5B7;}
+.entry p.intro {line-height: 2em; text-indent: 0;font-size: 14pt;}
+.entry p.intro:first-letter {
+  font-size: 30pt;
+  display: block;
+  float: left;
+  margin: 10px 5px 5px 0;
+}
+.entry p.intro:first-line {
+  text-transform: uppercase;
+}
+.entry p {
+  font-size: 14pt;
+  line-height: 2em;
+  text-indent: 2em;
+}
+
+/* Journal :: Frontpage > Bottom {is the sidebar next to the recent posts} */
+#bottom {clear: both; border-top: #eee solid 1px;}
+#bottom_head {
+    text-align: center;
+    font-family: Arial, sans;
+    font-size: 9pt;
+    text-transform: uppercase;
+    overflow: hidden;
+    color: #888;
+    line-height: 0.5em;
+    width: 95%;
+    border-bottom: #ccc 1px solid;
+    padding: 0;
+    margin: 0 auto;
+}
+#meta {
+    font-family: 'Arial', Sans-Serif;
+    font-size: 9pt;	
+    width: 250px;
+    margin: 10px 0 0 0;
+    float: left;
+}
+#meta ul {list-style-type: none; margin-bottom: 30px;}
+#meta ul li {
+	display: block;
+	background: #fcfcfc;
+	border-top: solid 1px #f5f5f5;
+}
+#meta ul li.headline {padding: 10px 10px; color: #9a9a9a; background: #f3f3f3; text-transform: uppercase; font-weight: bold; font-size: 12pt;}
+#meta a:link, #meta a:visited {display: block; padding: 10px 10px; text-decoration: none; color: #8a9a9a;}
+#meta a:hover {display; block; padding: 10px 10px; background: #f9f9f9; color: #5a5a5a;}
+#meta ul li.active {background: #f9f9f9; color: #5a5a5a ;border: solid 1px #f0f0f0;}
+#meta ul li.active a {color: #5a5a5a;}
+
+/* Journal :: Frontpage > Bottom {contains recent posts} */
+#archive {float: left; margin-left: 110px; width: 450px; list-style-type: none;}
+#archive h2 {text-transform: uppercase; border-bottom: solid 1px #eee;}
+.listing {padding-left:0; margin-left: 0; list-style-type: none;}
+.blogs {padding-top: 5px ; padding-bottom: 5px; border-bottom: #ccc 1px solid;}
+.entry-date {
+	color: #ccc;
+	display: inline;	
+	font-family: Arial, Sans !important;
+	font-size: 11pt;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: uppercase;
+        }
+.entry-title {
+	display: inline;
+	margin-left: 20px !important;
+	padding: 0;
+	color: #70828b !important;
+	font-family: Arial, Sans !important;
+	font-weight: bold;
+	font-size: 12pt;
+	text-transform: uppercase;
+	display: inline;
+	}
+#archive a:link, #archive a:visited {text-decoration: none; color: #888;}
+#archive a:hover {text-decoration: underline;}
+#archive p {color: #565656; font-size: 10pt;}
+#archive a.more {color: #069; font-size: 9pt; text-transform: uppercase;}
+
+
+/* Paginator */
+
+.paginator {
+    font-family: Verdana, sans;
+    font-size: 1.2em;
+    text-transform: lowercase;
+    overflow: hidden;
+    color: #888;
+    line-height: 1.4em;
+    width: 95%;
+    border-bottom: #ccc 1px solid;
+    padding: 10px;
+    margin: 0 auto;
+}
+.paginator a:link, .paginator a:visited{
+    font-family: Arial, Sans;
+    font-size: 8pt;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+    overflow: hidden;
+    color: #888;
+    line-height: 1.4em;
+    width: 100%;
+}
+.paginator a:hover{
+	text-decoration: underline;
+}
+div.previous {
+    display: block;
+    float: left;
+    width: 50%;
+    #padding-right: 10px;
+}
+a.disabled, a:hover.disabled, a:active.disabled{
+    font-family: Arial, Sans;
+    font-size: 8pt;
+    text-transform: uppercase;
+    overflow: hidden;
+    color: transparent;
+    line-height: 1.4em;
+    width: 100%;
+    text-decoration: none; 
+}
+div.taglist {
+    display: block;
+    float: left;
+    width: 33%;
+    #padding-left: 10px;
+    text-align: left;
+}
+div.next {
+    display: block;
+    float: left;
+    width: 50%;
+    #padding-left: 10px;
+    text-align: right;
+}
+div.firstentry {
+    display: block;
+    width: 100%;
+    text-align: right;
+}

@@ -1,0 +1,2 @@
+# kismetik.com source code
+This repository contains the source files for my Jekyll-powered site.

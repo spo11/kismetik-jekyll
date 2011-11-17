@@ -1,0 +1,28 @@
+---
+layout: post
+title: New site
+description: Inception 
+created: !!timestamp '2011-04-17 10:00:00'
+tags:
+    - site
+    - jekyll
+---
+
+
+As if I didn't have enough distractions with which to procrastinate, I started this site.I decided that my geeky interests needed some sort of place on earth so that I can up my geek cred by infinity. 
+
+<!--more-->
+
+So here it is, a site managed using [Jekyll](https://github.com/mojombo/jekyll). No, not the Doctor Henry Jekyll of *The Strange Case of Dr Jekyll and Mr Hyde* (though that would certainly be an interesting experience indeed, having a blog managed by a character representing the duality of the human spirit). I decided to run it on a *static website generator* so that I won't have to worry about MySQL being hacked or some other sort of issue that accompanies a dynamic site.
+
+<div class="picture left"> <img src="/images/Jekyllhyde.jpg" width="250" alt="Not this one" />No, not this one.</div>
+
+### My excuses
+
+I need to keep *Boredom* at bay when I'm at school, and blogging/programming keeps the Boredom away. All work and no play causes me dismay. 
+
+(I felt like rhyming the previous line, okay?)
+
+
+
+

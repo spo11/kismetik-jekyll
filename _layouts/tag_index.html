@@ -1,0 +1,39 @@
+---
+layout: main
+slug: tags
+description: "these are not the tags you are looking for"
+---
+
+<!-- Top -->
+{% include nav.html %}
+
+<!-- Head -->
+{% include head.html %}
+
+<div id="content">
+
+<h2 class="post_title">{{page.title}}</h2>
+<div id="archive"
+<ul class="listing clear">
+	{% for post in site.posts %}
+	{% for tag in post.tags %}
+	{% if tag == page.tag %}
+	<li class="blogs">
+		<span class="entry-date">{{ post.date | date:"%d/%m/%y" }}</span>
+		<a class="entry-title" href='{{post.url}}'>{{post.title}}</a>
+		<p>{{ post.content | postmorefilter: post.url, "Read the rest of this entry &rarr;"  }}</p>
+
+                        <small>
+			<b>Tags</b>
+			{% for tag in post.tags %}
+			<a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a>
+			{% endfor %}
+			</small>
+
+	</li>
+	{% endif %}
+	{% endfor %}
+	{% endfor %}
+</ul>
+
+</div>

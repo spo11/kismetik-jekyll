@@ -1,0 +1,8 @@
+<div id="nav">
+  <ul>
+    <li{% if page.slug == 'home' %} class="active"{% endif %}><a rel="home page" title="home sweet home" href="/">home</a></li>
+    <li{% if page.slug == 'about' %} class="active"{% endif %}><a rel="about this" title="what do you want to know?" href="/about/">about</a></li>
+    <li{% if page.slug == 'journal' %} class="active"{% endif %} {% if page.layout == 'post' %} class="active"{% endif %}><a rel="journal" title="musings on random things" href="/journal/">Journal</a></li>
+    <li{% if page.slug == 'projects' %} class="active"{% endif %}><a rel="project page" title="a list of my projects" href="/projects/">projects</a></li>
+  </ul>
+</div>

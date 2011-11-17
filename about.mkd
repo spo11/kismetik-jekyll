@@ -1,0 +1,51 @@
+---
+title: About
+layout: page
+slug: about
+description: "What is this place and who are you?"
+---
+
+# About
+
+Normally, people click on the **About** link on a site's navigation bar to find out more about it. I generally attempt to uphold an aura of mystery when I post online, and this is surely no exception. 
+
+In other words, I am too lazy to write a long biography about myself, and am far too unmotivated to write what the purpose of this site is.  
+
+For the sake of categorization, I intend for this site to be half a blog documenting my interests and adventures, with the remaining portion a showcase of what I've worked on. 
+
+*So why the name?* For someone who isn't a fatalist, why should I be compelled to name this site and its corresponding domain "**kismetik**"? I'll have to get back to you on that...  
+
+## The Author
+
+I am officially a student of *anthropology* and *molecular biology*, but in the never-ending effort to become a polymath (an unlikely reality) I endeavour to explore other disciplines and areas of knowledge. Among these seemingly disparate interests is computer science and bookbinding.  
+
+It will probably take another lifetime to achieve all that I want to do, particularly the *world domination* thing I've been planning for awhile in my head.  
+
+## Technical
+
+If, like me, you're one of those weirdos who are curious about what kind of systems people use, then here is some information as outputted by archey. 
+
+<pre>
+               +                OS: Arch Linux i686
+               #                Hostname: ilikeeggs
+              ###               Kernel Release: 3.1.1-1-ARCH
+             #####              Uptime: 5:58
+             ######             WM: DWM
+            ; #####;            DE: None
+           +##.#####            Packages: 708
+          +##########           RAM: 489 MB / 1947 MB
+         #############;         Processor Type: Intel(R) Pentium(R) Dual CPU T3400 @ 2.16GHz
+        ###############+        $EDITOR: vim
+       #######   #######        Root: 3.6G / 23G (15%) (ext4)
+     .######;     ;###;`".      Albums in MPD database: 206
+    .#######;     ;#####.       
+    #########.   .########`     
+   ######'           '######    
+  ;####                 ####;   
+  ##'                     '##    
+ #'                         `#
+</pre>
+
+## Site
+
+This here thing is powered by [Jekyll](https://github.com/mojombo/jekyll), a *static site generator*. 

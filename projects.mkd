@@ -1,0 +1,16 @@
+---
+title: Projects
+layout: page
+slug: projects
+description: "the things I work on"
+---
+
+# Coming Soon
+
+This is not the message you are looking for. 
+
+{% highlight python %}
+def foo
+  foo
+{% endhighlight %}
+
