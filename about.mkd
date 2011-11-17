@@ -48,4 +48,4 @@ If, like me, you're one of those weirdos who are curious about what kind of syst
 
 ## Site
 
-This here thing is powered by [Jekyll](https://github.com/mojombo/jekyll), a *static site generator*. 
+This here thing is powered by [Jekyll](https://github.com/mojombo/jekyll), a *static site generator*. The source is found on [github](https://github.com/spo11/kismetik-jekyll). 
