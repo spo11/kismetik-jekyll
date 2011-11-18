@@ -297,6 +297,7 @@ h1 a:link {text-transform: uppercase; color: black; font-family: 'Arial', Sans-S
 /* Paginator */
 
 .paginator {
+    clear: both;
     font-family: Verdana, sans;
     font-size: 1.2em;
     text-transform: lowercase;
@@ -357,7 +358,22 @@ div.firstentry {
     width: 100%;
     text-align: right;
 }
-
+div.none_left {
+    display: block;
+    float: left;
+    width: 50%;
+    color: #fff;
+    #padding-right: 10px;
+}
+div.none_right {
+    display: block;
+    float: left;
+    width: 50%;
+    color: #fff;
+    #padding-left: 10px;
+    text-align: right;
+}
+a.none {color: #fff;}
 /* IMG */
 .picture { background-color: #ffffff; 
 	border: 1px solid #CCCCCC; padding: 5px; 

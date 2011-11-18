@@ -35,27 +35,33 @@
 	<span>notes, thoughts, and information</span>
 </div>
 
-
 <!-- Article Navigation -->
-<div class="paginator">
+<div class="paginator"> 
 
-<div class="previous">
+<div {% if page.previous.title %} class="previous" {% endif %} class="none_left">
+{% if page.previous.title %}
 <a class="previous"
     title="Previous page: {{ page.previous.title }}"
         href="{{ page.previous.url }}">
     &larr; Previous Article
 </a>
+{% endif %}
+<a class="none">No articles</a>
 </div>
 
-<div class="next">
+<div {% if page.next.title %}class="next" {% endif %} class="none_right">
+{% if page.next.title %}
 <a class="next"
     title="Next page: {{ page.next.title }}"
         href="{{ page.next.url }}">
 Next Article &rarr;
 </a>
+{% endif %}
+<a class="none">No articles</a>
 </div>
 
 </div>
+
 
 <!-- Content -->
 
@@ -87,7 +93,34 @@ Next Article &rarr;
    </ul>
   </div>
 
-  <div id="box"></div>
+<!-- Article Navigation -->
+<div class="paginator"> 
+
+<div {% if page.previous.title %} class="previous" {% endif %} class="none_left">
+{% if page.previous.title %}
+<a class="previous"
+    title="Previous page: {{ page.previous.title }}"
+        href="{{ page.previous.url }}">
+    &larr; Previous Article
+</a>
+{% endif %}
+<a class="none">No articles</a>
+</div>
+
+<div {% if page.next.title %}class="next" {% endif %} class="none_right">
+{% if page.next.title %}
+<a class="next"
+    title="Next page: {{ page.next.title }}"
+        href="{{ page.next.url }}">
+Next Article &rarr;
+</a>
+{% endif %}
+<a class="none">No articles</a>
+</div>
+
+</div>
+
+<!-- Comments -->
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -102,6 +135,7 @@ Next Article &rarr;
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<center><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a></center>
 
 </body>
 
