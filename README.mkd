@@ -1,2 +1,67 @@
-# kismetik.com source code
-This repository contains the source files for my Jekyll-powered site.
+Kismetik.com Jekyll Source Files
+====================================
+
+This repository hosts the files needed to generate the site. Feel free to use it for reference.  
+
+Additional Ruby Gems
+-------------------------------------
+
+Simply issue the command 
+```
+gem install <name of gem>
+```
+to install the necessary Ruby gems for this site:
+
+ - jekyll_ext  
+
+If you encounter errors, look in the messages to see if there are any missing gems. 
+
+Arch Linux - Installing Pygments
+---------------------------------------
+
+For whatever reason, easy_install is not available on *Arch Linux*, my primary OS. To install Pygments on Arch Linux, which is needed to enable syntax highlighting, first install python2-pip.
+
+```
+pacman -S python2-pip
+```
+
+Then install Pygments
+```
+pip install Pygments
+```
+
+
+Rakefile
+---------------------------------------
+
+A Rakefile tells ruby what to do. My Rakefile has tasks for cleaning up the site output, for generating a new post, among other things.   
+
+### Available Tasks
+
+```
+rake deploy
+```
+
+This is a command that uses [s3cmd](http://s3tools.org/s3cmd) to sync the jekyll-generated pages with Amazon S3. 
+
+```
+rake clean
+```
+
+This deletes all the files in _site.
+
+```
+rake write["Title of post"]
+```
+
+This creates a new post in _posts. 
+
+
+Credits
+-----------------------------------------
+
+Thanks to these people for the resources they provided:
+
+* [rfelix](https://github.com/rfelix/my_jekyll_extensions) -- jekyll_ext coder
+* [mrdias](http://mrdias.com/2010/03/08/monthly-archives-for-jekyll.html) -- for monthly_archives hack
+* [hendrikvoldmer](http://blog.hendrikvolkmer.de/2011/02/25/moving-from-wordpress-on-a-vps-to-jekyll-and-amazon-s3/) -- for S3 sync information 
