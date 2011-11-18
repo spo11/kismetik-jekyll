@@ -65,3 +65,10 @@ Thanks to these people for the resources they provided:
 * [rfelix](https://github.com/rfelix/my_jekyll_extensions) -- jekyll_ext coder
 * [mrdias](http://mrdias.com/2010/03/08/monthly-archives-for-jekyll.html) -- for monthly_archives hack
 * [hendrikvoldmer](http://blog.hendrikvolkmer.de/2011/02/25/moving-from-wordpress-on-a-vps-to-jekyll-and-amazon-s3/) -- for S3 sync information 
+
+License
+-----------------------------------------
+
+Content in _posts is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/).
+
+The site HTML/CSS, stuff under _layouts, _includes, etc. are free for you to use. I'd really appreciate a link back to [Kismetik](http://www.kismetik.com), but it's not a super must.  
