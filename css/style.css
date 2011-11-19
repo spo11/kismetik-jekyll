@@ -161,6 +161,8 @@ h1 a:link {text-transform: uppercase; color: black; font-family: 'Arial', Sans-S
 
 /* Journal :: Frontpage > Featured */
 #featured {clear: both;}
+
+/* Journal :: Entry Properties */
 .entry {
     padding: 0px 30px 30px 10px;
     margin-left: 20px;

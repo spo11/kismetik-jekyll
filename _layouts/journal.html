@@ -23,7 +23,7 @@ title: journal
   <div class="entry">
 
   <h1>{{ post.title }}</h1>
-  <p class="intro">{{ post.content | postmorefilter: post.url, "Read more &rarr;" }}</p>
+  {{ post.content | postmorefilter: post.url, "Read more &rarr;" }}
   {% endfor %}
   </div>
 
@@ -40,7 +40,7 @@ title: journal
 <ul class="listing clear">
 {% for post in site.posts limit:5 %}
 <li class="blogs"><span class="entry-date">{{ post.date | date:"%d %b" }}</span><a class="entry-title" href="{{ post.url }}">{{ post.title }}</a>
-<p>{{ post.content | postmorefilter: post.url, "read more &rarr;"  }}</p>
+{{ post.content | postmorefilter: post.url, "read more &rarr;"  }}
 </li>
 {% endfor %}
 </ul>
@@ -63,6 +63,8 @@ title: journal
   </li>
 {% endfor %}
 </ul>
+
+</div>
 
 </div>
 
