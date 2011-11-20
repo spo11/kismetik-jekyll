@@ -2,6 +2,6 @@
 layout: journal
 title: Journal
 slug: journal
-description: "musings on stuff"
+description: "notes, thoughts, and information"
 ---
 

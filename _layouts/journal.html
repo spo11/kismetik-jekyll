@@ -1,6 +1,5 @@
 ---
 layout: main
-title: journal
 ---
 <!-- Top -->
 {% include nav.html %}
@@ -38,7 +37,7 @@ title: journal
 
 <div id="archive">
 <ul class="listing clear">
-{% for post in site.posts limit:5 %}
+{% for post in site.posts limit:4 %}
 <li class="blogs"><span class="entry-date">{{ post.date | date:"%d %b" }}</span><a class="entry-title" href="{{ post.url }}">{{ post.title }}</a>
 {{ post.content | postmorefilter: post.url, "read more &rarr;"  }}
 </li>
@@ -51,7 +50,7 @@ title: journal
 
      <li class="headline">Tags</li>
      {% for tag in site.tags %}
-     <li><a href="/tag/{{ tag[0] }}">{{ tag[0] }}</a></li>
+     <li><a href="/tags/{{ tag[0] }}">{{ tag[0] }}</a></li>
      {% endfor %}
   </ul>
 
@@ -68,4 +67,8 @@ title: journal
 
 </div>
 
+</div>
+
+<div class="viewarchives">
+<p><a href="/archives/">View the entire archive</a></p>
 </div>

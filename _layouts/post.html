@@ -36,31 +36,7 @@
 </div>
 
 <!-- Article Navigation -->
-<div class="paginator"> 
-
-<div {% if page.previous.title %} class="previous" {% endif %} class="none_left">
-{% if page.previous.title %}
-<a class="previous"
-    title="Previous page: {{ page.previous.title }}"
-        href="{{ page.previous.url }}">
-    &larr; Previous Article
-</a>
-{% endif %}
-<a class="none">No articles</a>
-</div>
-
-<div {% if page.next.title %}class="next" {% endif %} class="none_right">
-{% if page.next.title %}
-<a class="next"
-    title="Next page: {{ page.next.title }}"
-        href="{{ page.next.url }}">
-Next Article &rarr;
-</a>
-{% endif %}
-<a class="none">No articles</a>
-</div>
-
-</div>
+{% include article_nav.html %}
 
 
 <!-- Content -->
@@ -94,48 +70,13 @@ Next Article &rarr;
   </div>
 
 <!-- Article Navigation -->
-<div class="paginator"> 
-
-<div {% if page.previous.title %} class="previous" {% endif %} class="none_left">
-{% if page.previous.title %}
-<a class="previous"
-    title="Previous page: {{ page.previous.title }}"
-        href="{{ page.previous.url }}">
-    &larr; Previous Article
-</a>
-{% endif %}
-<a class="none">No articles</a>
-</div>
-
-<div {% if page.next.title %}class="next" {% endif %} class="none_right">
-{% if page.next.title %}
-<a class="next"
-    title="Next page: {{ page.next.title }}"
-        href="{{ page.next.url }}">
-Next Article &rarr;
-</a>
-{% endif %}
-<a class="none">No articles</a>
-</div>
-
-</div>
+{% include article_nav.html %}
 
 <!-- Comments -->
+{% include disqus.html %}
 
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'kismetik'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<center><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a></center>
+<!-- Footer -->
+{% include footer.html %}
 
 </body>
 

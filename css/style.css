@@ -16,7 +16,7 @@ body {
     width: 100%;
     padding-left: 50px;
     font-family: 'Arial', Sans;
-    font-size: 10pt;
+    font-size: 11pt;
     text-transform: uppercase;
 }
 #nav ul { 
@@ -36,14 +36,12 @@ body {
     float: left;
     display: block;
     padding: 5px 10px;
-    color: #d0d0d0;
+    color: #C4C4C4;
 }
 
 #nav a:hover {
     float: left;
-    display: block;
-    padding: 5px 10px;
-    background: #ddd;
+    display: block; padding: 5px 10px; background: #ddd;
     color: #f5f5f5;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
@@ -57,7 +55,8 @@ body {
 #nav ul li.active a:visited,
 #nav ul li.active a:hover,
 #nav ul li.active a:active {
-    color: #fff;
+    color: #BABABA;
+    font-weight: bold;
     text-decoration: none;
     background: #eee;
     -webkit-border-bottom-left-radius: 3px;
@@ -191,6 +190,16 @@ h1 a:link {text-transform: uppercase; color: black; font-family: 'Arial', Sans-S
   line-height: 2em;
   text-indent: 2em;
 }
+.viewarchives {
+  text-align: center;
+  clear: both;
+  font-size: 38pt;
+}
+.viewarchives a:link, .viewarchives a:visited {
+  text-decoration: none;
+  color: #069;
+}
+.viewarchives a:hover {text-decoration: bold;}
 #featured a.more {
   font-family: Sans; 
   font-size: 11pt; 
@@ -200,7 +209,7 @@ h1 a:link {text-transform: uppercase; color: black; font-family: 'Arial', Sans-S
   color: #e55454; 
   text-transform: uppercase;
   }
-#featured .more a:hover {background:#FAEFB4; color: eee;}
+#featured .more a:hover {background:#FAEFB4;}
 
 /* Journal :: Frontpage > Bottom {is the sidebar next to the recent posts} */
 #bottom {clear: both; border-top: #eee solid 1px;}
@@ -396,3 +405,22 @@ img {display: block; border: 1px solid #CCCCCC; width: 100%;
 /* Disqus */
 #box {clear:both; border-bottom: solid 2px #eee;width: 100%;}
 #disqus_thread {margin: 0 auto;  padding: 0 15px; clear: both; width: 700px; border-top: solid 2px #eee;} 
+
+/* Footer */
+#footer {
+        border-top: solid 1px #ededed;
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+	color: #888888;
+	text-align: center;
+}
+#footer p {font-family: Sans; text-transform: uppercase; font-size: 8pt;}
+#footer a:link,
+#footer a:visited
+{
+        color: #888888;
+	font-weight: bold;
+	text-decoration: none;
+}
+#footer a:hover {color: #696969;}

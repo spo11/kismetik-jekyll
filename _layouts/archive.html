@@ -1,0 +1,50 @@
+---
+layout: main
+---
+
+{% include nav.html %}
+
+{% include head.html %}
+
+
+<div id="content">
+<div class="entry">
+
+{{ content }}
+
+<h1 id="chronological">Browse by Date</h1>
+{% for year in (2005..2015) reversed %}
+{% if site.collated_posts[year] %}
+<h2 class="archives">{{ year }}</h2>
+{% endif %}
+{% for month in (1..12) reversed %}
+{% if site.collated_posts[year][month] %}
+<h3>{{ month | to_month }}</h3>
+<ul class="archive-page">
+{% for day in (1..31) reversed %}
+{% if site.collated_posts[year][month][day] %}
+{% for post in site.collated_posts[year][month][day] reversed %}
+<li><a href='{{ site.base_url }}{{ post.url }}' title="{{ post.title }}">{{ post.title }}</a></li>
+{% endfor %}
+{% endif %}
+{% endfor %}
+</ul>
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+
+
+<h1 id="tagindex">Browse by tag</h1>
+
+
+<ul>
+{% for tag in site.tags %}
+  <li> 
+    <a href="/tags/{{ tag[0] }}">{{ tag[0] }}</a>
+  </li>
+{% endfor %}
+</ul>
+
+</div>
+</div>

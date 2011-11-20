@@ -1,0 +1,26 @@
+<div class="paginator"> 
+
+	<div {% if page.previous.title %} class="previous" {% endif %} class="none_left">
+	{% if page.previous.title %}
+	<a class="previous"
+	    title="Previous page: {{ page.previous.title }}"
+		href="{{ page.previous.url }}">
+	    &larr; Previous Article
+	</a>
+	{% endif %}
+	<a class="none">No articles</a>
+	</div>
+
+	<div {% if page.next.title %}class="next" {% endif %} class="none_right">
+	{% if page.next.title %}
+	<a class="next"
+	    title="Next page: {{ page.next.title }}"
+		href="{{ page.next.url }}">
+	Next Article &rarr;
+	</a>
+	{% endif %}
+	<a class="none">No articles</a>
+	</div>
+
+</div>
+
