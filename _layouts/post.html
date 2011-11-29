@@ -60,15 +60,6 @@
 
 </div>
 
-  <div id="post_info">
-   <ul class="tag_list_in_post">
-    <li class="headline">Tagged as</li>
-    {% for tag in page.tags %}
-    <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
-    {% endfor %}
-   </ul>
-  </div>
-
 <!-- Article Navigation -->
 {% include article_nav.html %}
 

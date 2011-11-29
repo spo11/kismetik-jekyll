@@ -7,7 +7,9 @@ tags:
  - development
 ---
 
-This site has gone through multiple incarnations in the past year. It's been more than 6 months since this site's inception and it's gotten more facelifts than an aging Hollywood dame.   
+<p class="intro">This site has gone through multiple incarnations in the past
+year. It's been more than 6 months since this site's inception and it's gotten
+more facelifts than an aging Hollywood dame.  </p> 
 
 <!--more-->
 

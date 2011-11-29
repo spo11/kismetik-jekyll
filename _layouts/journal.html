@@ -21,7 +21,7 @@ layout: main
 
   <div class="entry">
 
-  <h1>{{ post.title }}</h1>
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   {{ post.content | postmorefilter: post.url, "Read more &rarr;" }}
   {% endfor %}
   </div>
@@ -29,12 +29,12 @@ layout: main
 </div>
 
 <!-- Recent Posts and Navigtion -->
-<div id="bottom">
+
 <div id="bottom_head">
-<p>Other posts that may interest you</p>
 </div>
 
 
+<div id="bottom">
 <div id="archive">
 <ul class="listing clear">
 {% for post in site.posts limit:4 %}
@@ -65,7 +65,7 @@ layout: main
 
 </div>
 
-</div>
+
 
 </div>
 

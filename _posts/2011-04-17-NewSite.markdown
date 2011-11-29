@@ -8,7 +8,6 @@ tags:
     - jekyll
 ---
 
-
 As if I didn't have enough distractions with which to procrastinate, I started this site.I decided that my geeky interests needed some sort of place on earth so that I can up my geek cred by infinity. 
 
 <!--more-->

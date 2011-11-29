@@ -8,9 +8,33 @@ layout: main
 
 
 <div id="content">
+
+
+  <div class="date">
+    <ul>
+      <li class="day">{{ page.date | date:"%d" }}</li>
+      <li class="month">{{ page.date | date:"%b" }}</li>
+    </ul>
+  </div>
+
 <div class="entry">
 
 {{ content }}
+
+<h2>Search</h2>
+
+<div id="cse" style="width: 100%;">Loading</div>
+<script src="//www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript"> 
+  google.load('search', '1', {language : 'en', style : google.loader.themes.MINIMALIST});
+  google.setOnLoadCallback(function() {
+    var customSearchControl = new google.search.CustomSearchControl(
+      '011198434063863033436:2xtenu7_fdk');
+
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    customSearchControl.draw('cse');
+  }, true);
+</script>
 
 <h1 id="chronological">Browse by Date</h1>
 {% for year in (2005..2015) reversed %}
@@ -33,10 +57,7 @@ layout: main
 {% endfor %}
 {% endfor %}
 
-
-
 <h1 id="tagindex">Browse by tag</h1>
-
 
 <ul>
 {% for tag in site.tags %}
