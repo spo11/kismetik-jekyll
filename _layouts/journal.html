@@ -39,8 +39,11 @@ layout: main
 <ul class="listing clear">
 {% for post in site.posts limit:4 %}
 <li class="blogs"><span class="entry-date">{{ post.date | date:"%d %b" }}</span><a class="entry-title" href="{{ post.url }}">{{ post.title }}</a>
-{{ post.content | postmorefilter: post.url, "read more &rarr;"  }}
+
 </li>
+<p>
+  {{ post.content | postmorefilter: post.url, "Read more &rarr;" }}
+</p>
 {% endfor %}
 </ul>
 </div>

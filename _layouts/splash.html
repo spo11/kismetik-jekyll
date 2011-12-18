@@ -8,3 +8,14 @@ layout: main
   <h1 class="logo">Kismetik</h1>
   {{ content }}
 </div>
+
+<div id="content">
+<div id="archive">
+<ul class="listing clear">
+{% for post in site.posts limit:4 %}
+<li class="blogs"><span class="entry-date">{{ post.date | date:"%d %b" }}</span><a class="entry-title" href="{{ post.url }}">{{ post.title }}</a>
+
+</li>
+{% endfor %}
+</ul>
+</div>
